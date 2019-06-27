@@ -1,4 +1,4 @@
-<?php 
+<?php
 $config['id'] = '1'; 
 $config['dropbox_email'] = ''; 
 $config['dropbox_password'] = ''; 
@@ -7,19 +7,19 @@ $config['site_contact_number'] = '';
 $config['email_title'] = 'PHPTRAVELS'; 
 $config['google_verification'] = ''; 
 $config['google_verification_code'] = ''; 
-$config['facebook_link'] = 'https://www.facebook.com/zoplay'; 
-$config['twitter_link'] = 'https://twitter.com/ZoplayCom'; 
-$config['pinterest'] = 'https://www.pinterest.com/zoplay/'; 
-$config['googleplus_link'] = 'https://plus.google.com/u/0/+Zoplayproducts/videos'; 
+$config['facebook_link'] = 'https://www.facebook.com/';
+$config['twitter_link'] = 'https://twitter.com/';
+$config['pinterest'] = 'https://www.pinterest.com/';
+$config['googleplus_link'] = 'https://plus.google.com/u/0/';
 $config['linkedin_link'] = ''; 
 $config['rss_link'] = ''; 
-$config['youtube_link'] = 'https://www.youtube.com/channel/UCgd7agAfWazaQvfUcEhTYhw/videos'; 
+$config['youtube_link'] = 'https://www.youtube.com/channel/';
 $config['footer_content'] = 'Copyright 2015 PHPTRAVELS. All rights reserved.'; 
 $config['logo_image'] = 'logo.png'; 
 $config['home_logo_image'] = 'logo.png'; 
 $config['background_image'] = 'bg2.jpg'; 
-$config['videoUrl'] = 'https://www.youtube.com/watch?v=TmDKbUrSYxQ'; 
-$config['slider'] = 'off'; 
+$config['videoUrl'] = 'https://www.youtube.com/watch?v=TmDKbUrSYxQ';
+$config['slider'] = 'off';
 $config['meta_title'] = 'PHPTRAVELS'; 
 $config['meta_keyword'] = 'PHPTRAVELS'; 
 $config['meta_description'] = 'PHPTRAVELS'; 
@@ -73,4 +73,4 @@ $config['is_verified'] = 'Yes';
 $config['status'] = 'Active'; 
 $config['message_pagination_per_page'] = '10'; 
 $config['site_pagination_per_page'] = '10'; 
-$config['base_url'] = 'http://localhost/Dropbox/clone/airbnb/';  ?>
+$config['base_url'] = '';  ?>
