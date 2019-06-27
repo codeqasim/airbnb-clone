@@ -1,0 +1,1083 @@
+	/** Responsive CSS **/
+
+
+
+/* ============================= 1024px ====================== */
+
+@media only screen and (min-width:1024px) and (max-width: 1250px) {
+
+.logo-container .inpt-head-place {
+
+    width: 32%;
+
+}
+
+.header .container2 .col-md-7 {
+    float: left;
+    width: 59%;
+}
+
+input.auto-tet[type="text"]{width: 200px}
+
+
+
+.host-list li{width: 88%}
+
+.sidebar{top: 59px;}
+
+.map{top: 58px;}
+
+.filter-primary-item.span2 {
+
+    margin: 0;
+
+    width: 154px;
+
+}
+
+.span2 {
+
+    width: 91px;
+
+}
+
+.filter-primary-item.span2 {
+
+    margin: 0;
+
+    width: 152px;
+
+}	
+
+li .filter-primary-item input[type="checkbox"]{ margin: 32px 0px 0 0;}	
+
+.sidebar .ui-slider-horizontal{width: 100%}
+
+#amount_pricefilter{float: right;}
+
+.right-arel label span{width: 100px}
+
+.navbar .nav > li > a{ padding: 10px 9px;}
+
+.showlist2.useclas{   right: 32px;}
+
+.wishlist-header-badge.one-line{
+
+	width: 97%;
+
+}
+
+.dropdn{
+
+	width: 91%;
+
+}
+
+
+
+
+
+
+h1.logo {
+  float: left;
+  width: 52%;
+}
+h1.logo img{width: 100% }
+.logo-container .logo a {
+  display: inline-block;
+  float: left;
+  width: 100%;
+}
+
+h1.logo {
+  float: left;
+  width: 23%;
+  margin: 0;
+  padding: 0 10px 0 0;
+}
+
+.brows-loop .browse{float: right;}
+
+
+}
+
+
+
+/* ============================= 768px ====================== */
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+.nav-collapse, .nav-collapse.collapse {
+
+    height: auto;
+
+    overflow: visible;
+
+}
+
+
+
+.logo {    width: 140px;}
+
+.header .container2 .col-md-5{
+
+    float: left;
+
+    width: 50%;
+
+}
+
+.inpt-head-place {    width: 39%;}
+
+
+
+.brows-loop {
+
+    margin: 0;
+
+    padding: 8px 0 0;
+
+    width: 19%;
+
+}
+
+.navbar-collapse.my-nav #broswe_box1 {
+
+    float: left;
+
+    padding: 0;
+
+    position: relative;
+
+    width: 46%;
+
+}
+
+
+
+.navbar .nav > li > a.request-trip {
+
+     font-size: 12px;
+
+    margin: 8px 0 0 10px;
+
+    padding: 4px 0;
+
+    width: 119px;
+
+}
+
+
+
+.navbar .nav{width: 100%}
+
+.nav-collapse .nav > li {
+
+    float: left;
+
+}
+
+
+
+.btn.btn-navbar{display: none;}
+
+.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a{ padding: 9px 11px;
+
+}
+
+
+
+#broswe_box1 a {
+
+    float: left;
+
+    height: auto !important;
+
+    overflow: hidden;
+
+    padding: 0;
+
+    width: 95%;
+
+}
+
+
+
+
+
+/* ============================= show ====================== */
+
+
+
+
+
+.profile-page .col-sm-3{
+
+	width: 30%;
+
+}
+
+.profile-page .col-sm-7{
+
+	width: 70%;
+
+}
+
+.namd-space{
+
+	width: 100%;
+
+}
+
+.listig-areasli li{	
+
+	width: 41%;
+
+}
+
+
+
+
+
+.profile-page .col-sm-9{
+
+	width: 69%;
+
+}
+
+.browsefriendsbannner #carousel-example-generic{
+
+	height: 380px !important;
+
+}
+
+.host-section .col-md-4{
+
+	padding: 0 5px;	
+
+}
+
+.host-list li {
+
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+
+    margin: 0;
+
+    padding: 0 !important;
+
+}
+
+.devlop-link {
+
+    width:60% !important;
+
+	background: url("../../images/link-arrow.png") no-repeat scroll right 3px transparent;
+
+	padding: 1px 0 0 !important;
+
+}
+
+.cenralize{
+
+	min-height: 406px;
+
+}
+
+.host-container{
+
+	height: auto;
+
+}
+
+.host-container img {
+
+    width: 100%;
+
+}
+
+.image-shadow{
+
+	height: auto;
+
+}
+
+.container1 {
+
+    margin: 0 auto;
+
+    width: 100%;
+
+}
+
+.dropdn{
+
+	width: 100%;
+
+}
+
+.nav #broswe_box1 #showlist_test {
+
+    margin: 0 5px !important;
+
+}
+
+.detail-middle .col-md-8{
+
+	text-align: center;
+
+    width: 100%;
+
+}
+
+
+
+.star {
+
+    display: inline-block;
+
+    float: none;
+
+}
+
+.review_img{
+
+	display: inline-block;
+
+    float: none;
+
+}
+
+.nums{
+
+	display: inline-block;
+
+    float: none;
+
+}
+
+.listing-menu-left{
+
+	width: 100%;
+
+}
+
+.listing-menu-right {
+
+    float: left;
+
+    text-align: center;
+
+    width: 100%;
+
+}
+
+.listing-pep{
+
+	float: none;
+
+    height: 106px;
+
+}
+
+.pep-name{
+
+	width: 100%;
+
+}
+
+.about-listing .col-md-7{
+
+	width: 100%;
+
+}
+
+#command_center{
+
+	min-height: 460px;
+
+}
+
+.nav #broswe_box1 #showlist_test {
+
+    margin:0!important;
+
+}
+
+.user-name{
+
+	padding: 10px 5px;
+
+}
+
+#broswe_box1 .caret {
+
+    margin: 20px 3px;
+
+}
+
+.login-list-cont li.caling-area input {
+
+    width: 34%;
+
+}
+
+
+.searching-section {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.67);
+  border-radius: 0;
+  bottom: -120px;
+  display: inline-block;
+  float: none;
+  left: 0;
+  margin: 0px auto 0;
+  padding: 27px 2px 18px;
+  position: absolute;
+  text-align: center;
+  width: 103%;
+}
+
+.searching-section input.where{width: 31%}
+
+
+.logo{float: left; width: 30%}
+.main-text{top: 38%}
+.center-page .hme-container li {
+  padding: 0;
+  width: 50%;
+  margin: 0;
+}
+
+.hme-container li a{height: auto}
+.overlay-text{  padding: 100px 0 0;}
+
+h1.logo {
+  float: left;
+  width: 52%;
+}
+h1.logo img{width: 100% }
+.logo-container .logo a {
+  display: inline-block;
+  float: left;
+  width: 100%;
+}
+
+h1.logo {
+  float: left;
+  width: 35%;
+  margin: 0;
+  padding: 0 10px 0 0;
+}
+.brows-loop .browse{float: right;}
+
+.header .container2 .col-md-5 {
+    padding: 0;
+    width: 50%;
+}
+
+}
+
+
+
+
+
+/* ============================= 736px ====================== */
+
+
+
+@media screen and (min-width: 736px) and (max-width: 767px){
+
+
+
+.browsefriendsbannner #carousel-example-generic {
+
+    height: 250px !important;
+
+}
+
+.text-center h1.listing-text{
+
+	line-height: 48px;
+
+	font-size: 34px;
+
+}
+
+.host-container{
+
+	height: auto;
+
+}
+
+.host-container img {
+
+    width: 100%;
+
+}
+
+.host-list li {
+
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+
+    font-size: 12px;
+
+    margin: 0;
+
+    padding: 0 !important;
+
+}
+
+.devlop-link {
+
+    width:68% !important;
+
+	background: url("../../images/link-arrow.png") no-repeat scroll right 3px transparent;
+
+	padding: 1px 0 0 !important;
+
+}
+
+.cenralize{
+
+	min-height: 382px;
+
+}
+
+.container1 {
+
+    margin: 0 auto;
+
+    width: 100%;
+
+}
+
+.image-shadow{
+
+	height: auto;
+
+}
+
+
+
+}
+
+
+
+
+
+/* ============================= 667px ====================== */
+
+
+
+
+
+@media screen and (min-width: 667px) and (max-width: 735px){
+
+
+.searching-section input.chek-in , .searching-section input.where[type="text"] , .searching-section input.chek , .select.home_select{font-size: 11px;}
+
+
+.browsefriendsbannner #carousel-example-generic {
+
+    height: 252px !important;
+
+}
+
+.text-center h1.listing-text{
+
+	line-height: 48px;
+
+	font-size: 34px;
+
+}
+
+.payment_right label{
+
+	clear: both;
+
+}
+
+.devlop-link {
+
+    width: 22% !important;
+
+	background: url("../../images/link-arrow.png") no-repeat scroll right 4px transparent;
+
+}
+
+.cenralize{
+
+	margin-bottom:20px;
+
+}
+
+.image-shadow{
+
+	background-size:100% 100%;
+
+}
+
+.footer-bg .col-md-4{
+
+	text-align: center;
+
+    width: 100%;
+
+}
+
+
+
+
+
+.searching-section input.where{width: 32%}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+/* ============================= 600px ====================== */
+
+
+
+
+
+@media screen and (min-width: 600px) and (max-width: 666px){
+
+
+
+
+
+.browsefriendsbannner #carousel-example-generic {
+
+    height: 255px !important;
+
+}
+
+.text-center h1.listing-text{
+
+	line-height: 48px;
+
+	font-size: 34px;
+
+}
+
+.payment_right label{
+
+	clear: both;
+
+}
+
+.devlop-link {
+
+    width: 29% !important;
+
+	background: url("../../images/link-arrow.png") no-repeat scroll right 4px transparent;
+
+}
+
+.cenralize{
+
+	margin-bottom:20px;
+
+}
+
+.image-shadow{
+
+	background-size:100% 100%;
+
+}
+
+.footer-bg .col-md-4{
+
+	text-align: center;
+
+    width: 100%;
+
+}
+
+
+
+
+
+
+.searching-section input.where{width: 28%}
+
+
+
+}
+
+
+
+/* ============================= 568px ====================== */
+
+
+
+@media screen and (min-width: 568px) and (max-width: 599px){
+
+
+
+
+
+.browsefriendsbannner #carousel-example-generic {
+
+    height: 250px !important;
+
+}
+
+.text-center h1.listing-text{
+
+	line-height: 48px;
+
+	font-size: 34px;
+
+}
+
+.listyourspace .apart_hide span{
+
+	font-size: 12px;
+
+}
+
+.payment_right label{
+
+	clear: both;
+
+}
+
+.devlop-link {
+
+    width: 29% !important;
+
+	background: url("../../images/link-arrow.png") no-repeat scroll right 4px transparent;
+
+}
+
+.cenralize{
+
+	margin-bottom:20px;
+
+}
+
+.image-shadow{
+
+	background-size:100% 100%;
+
+}
+
+#inline_reg .banner_signup .popup_facebook{	
+
+	padding: 5px 35px 12px 31px;
+
+	font-size: 13px;
+
+	line-height: 24px;
+
+}
+
+#inline_reg .banner_signup .popup_google{
+
+	background: url("../../images/fb1.png") no-repeat scroll 15px 4px #ff6a6f;
+
+	font-size:13px;
+
+}
+
+.searching-section input.where{  width: 24%; }
+
+
+.searching-section input.chek{width: 17%}
+.searching-section input.chek-in{width: 20%}
+select.home_select {
+    width: 89px;
+}
+}
+
+
+
+/* ============================= 480px ====================== */
+
+
+
+
+
+@media screen and (min-width: 480px) and (max-width: 567px){
+
+
+
+.browsefriendsbannner #carousel-example-generic {
+
+    height: 191px !important;
+
+}
+
+
+
+
+
+}
+
+
+
+/* ============================= 414px ====================== */
+
+
+
+@media screen and (min-width: 414px) and (max-width: 479px){
+
+
+
+.browsefriendsbannner #carousel-example-generic {
+
+    height: 191px !important;
+
+}
+
+.devlop-link {
+
+    width: 38% !important;
+
+	background: url("../../images/link-arrow.png") no-repeat scroll right 4px transparent;
+
+}
+
+.cenralize{
+
+	margin-bottom:20px;
+
+}
+
+.image-shadow{
+
+	background-size:100% 100%;
+
+}
+
+.footer-bg .col-md-4{
+
+	text-align: center;
+
+    width: 100%;
+
+}
+
+#inline_reg .banner_signup .popup_facebook{	
+
+	padding: 5px 35px 12px 31px;
+
+	font-size: 13px;
+
+	line-height: 24px;
+
+}
+
+#inline_reg .banner_signup .popup_google{
+
+	background: url("../../images/fb1.png") no-repeat scroll 15px 4px #ff6a6f;
+
+	font-size:13px;
+
+}
+
+
+
+
+
+}
+
+
+
+/* ============================= 384px ====================== */
+
+
+
+
+
+@media screen and (min-width: 384px) and (max-width: 413px){
+
+
+
+.browsefriendsbannner #carousel-example-generic {
+
+    height: 174px !important;
+
+}
+
+.devlop-link {
+
+    width: 47% !important;
+
+	background: url("../../images/link-arrow.png") no-repeat scroll right 4px transparent;
+
+}
+
+#inline_reg .banner_signup .popup_facebook{	
+
+	padding: 5px 35px 12px 31px;
+
+	font-size: 13px;
+
+	line-height: 24px;
+
+}
+
+#inline_reg .banner_signup .popup_google{
+
+	background: url("../../images/fb1.png") no-repeat scroll 15px 4px #ff6a6f;
+
+	font-size:13px;
+
+}
+
+
+
+
+
+
+
+}
+
+
+
+/* ============================= 375px ====================== */
+
+
+
+
+
+@media screen and (min-width: 375px) and (max-width: 383px){
+
+
+
+.browsefriendsbannner #carousel-example-generic {
+
+    height: 171px !important;
+
+}
+
+.devlop-link {
+
+    width: 46% !important;
+
+	background: url("../../images/link-arrow.png") no-repeat scroll right 4px transparent;
+
+}
+
+.devlop-link {
+
+    width: 47% !important;
+
+	background: url("../../images/link-arrow.png") no-repeat scroll right 4px transparent;
+
+}
+
+#inline_reg .banner_signup .popup_facebook{	
+
+	padding: 5px 35px 12px 31px;
+
+	font-size: 13px;
+
+	line-height: 24px;
+
+}
+
+#inline_reg .banner_signup .popup_google{
+
+	background: url("../../images/fb1.png") no-repeat scroll 15px 4px #ff6a6f;
+
+	font-size:13px;
+
+}
+
+
+
+
+
+}
+
+/* ============================= 320px ====================== */
+
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 374px){
+
+
+
+.logo {
+
+    float: left;
+
+    padding: 10px 0 0;
+
+    text-align: center;
+
+    width: 100%;
+
+}
+
+.logo a img {
+
+    display: inline-block;
+
+    margin: -14px 6px 0 0;
+
+    width: 68%;
+
+	float: none;
+
+}
+
+.inpt-head-place{
+
+	width: 98%;
+
+}
+
+.browsefriendsbannner #carousel-example-generic {
+
+    height: 142px !important;
+
+}
+
+.auto-tet.ui-autocomplete-input{
+
+	width: 100% !important;
+
+}
+
+#inline_reg .banner_signup .popup_facebook{	
+
+	padding: 5px 35px 12px 31px;
+
+	font-size: 13px;
+
+	line-height: 24px;
+
+}
+
+#inline_reg .banner_signup .popup_google{
+
+	background: url("../../images/fb1.png") no-repeat scroll 15px 4px #ff6a6f;
+
+	font-size:13px;
+
+}
+
+
+
+
+
+}
+
+
+
+
+

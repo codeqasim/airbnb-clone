@@ -1,0 +1,18 @@
+Installation Guide for Site:
+----------------------------
+1.	Unzip the installation file package.
+2.	Rename htaccess.txt to .htaccess in the root folder. If the .htaccess already presents then overwrite the file.
+3.	After configuring the database settings in the server.
+4.	Then open the website in the browser and enter the host name, database user name, database password, database name respectively. 
+5.	It prompts to next page where you need to enter admin login info, website name and domain url etc. 
+
+
+To set the 777 permission for following folder and all files inside it:
+--------------------------------------------------------------
+commonsettings
+newsletter
+sitemap
+images
+
+Need to setup 777 only for "application" and then make 777 for "languages" folder and its files.
+Need to setup 777 only for "js" and then make 777 for "uploaded" folder and its files.

@@ -1,0 +1,15 @@
+
+Installation Guide :
+-------------------
+
+1.	Open the databaseValues.php file from the main folder after you extract the zip file.
+2.	Give the host name, database user name, database password, database name respectively. please configure the settings in your server and check.
+3.	Open the link in the browser. For example http://domainname/admin.
+4.	Login into the admin panel. Default user name admin and password is admin.
+5.	Click the Admin -> Settings. Or else paste the text next to your domain url. admin/adminlogin/admin_global_settings_form
+a.	Eg: http://domainname.com/admin/adminlogin/admin_global_settings_form
+6.	Also update all settings like SMTP , SEO , Social Media links like facebook,twitter,googleplus, Payment Gateway , Location & Tax , Gift Card Settings.
+7.	Next add some categories.
+8.	Now add some products , also add the fancyy box etc.
+9.	Now logout from the admin panel and open the main site. For example domainname.
+10.	Thats all...
