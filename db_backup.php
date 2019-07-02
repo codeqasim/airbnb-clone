@@ -1,9 +1,9 @@
 <?php
 
 $host = "localhost"; 
-$username = "wwwcays_rentalin";
-$password = "qq~KUTQW!+KC"; 
-$dbname = "wwwcays_rentalsver2";  
+$username = "aaa";
+$password = "aaa";
+$dbname = "aaa";
 
 backup_tables($host, $username, $password, $dbname);
 
@@ -50,7 +50,7 @@ $return.="nnn";
 }
 
 
-$handle = fopen('backup/backupdb'.'.sql','w+');
+$handle = fopen('backupdb'.'.sql','w+');
 fwrite($handle,$return);
 fclose($handle);
 }
@@ -61,7 +61,6 @@ $arr_file = glob("*.sql");
 
 }
 
-
 $path = dirname($_SERVER['PHP_SELF']);
 $position = strrpos($path,'/') + 1;
 $folder_name = substr($path,$position);
@@ -69,6 +68,6 @@ $folder_name = substr($path,$position);
 
 $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator("../$folder_name/"));
 
-echo "<script> window.location='admin/dashboard/admin_dashboard';alert('Successfully Backup Database');</script>";
+echo "<script> window.location='/';alert('Successfully Backup Database');</script>";
 
 ?>
