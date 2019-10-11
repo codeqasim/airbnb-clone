@@ -1,6 +1,4 @@
-RewriteEngine on
-RewriteCond $1 !^(index\.php|images|javascript|uploads|fonts|dopbcp|server|asset|robots\.txt)
-RewriteRule ^(.*)$ index.php?/$1 [QSA,L]
+
 
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php56” package as the default “PHP” programming language.

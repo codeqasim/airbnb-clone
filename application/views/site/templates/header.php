@@ -595,7 +595,7 @@
         });
       });
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&signed_in=true"></script>
+<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyBxuDvvvAEk0SCERQ4wc7xfLeTHynMrMNg&libraries=places"></script> 
     <!--<script type="text/javascript" src="js/markerwithlabel.js"></script>
       <script type="text/javascript" src="js/markerwithlabel_packed.js"></script>-->
     <script>
