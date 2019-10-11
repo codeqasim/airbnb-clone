@@ -1,0 +1,177 @@
+<?php
+
+/*
+ * This page displays the user verification information. User can verify their phone number and email here.
+ *
+ * @author: Muthumareeswari
+ * @package: Views
+ * @PHPVersion: 5.4
+ */
+/* @var $this yii\web\View */
+
+use yii\helpers\Html;
+use yii\bootstrap\ActiveForm;
+use yii\widgets\LinkPager;
+use frontend\models\Listing;
+$this->title = 'Reviews About You';
+?>
+<?php
+$baseUrl = Yii::$app->request->baseUrl;
+//echo $userdata['firstname'];die;
+$firstname = $userdata['firstname'];
+$lastname = $userdata['lastname'];
+$id = $userdata['id'];
+$username = base64_encode($id."-".rand(0,999));
+?>
+<div class="profile_head">
+	<div class="container">    
+    	<ul class="profile_head_menu list-unstyled">
+		<?php 
+    echo '<li><a href="'.$baseUrl.'/dashboard">'.Yii::t('app','Dashboard').'</a></li>
+       <li><a href="'.$baseUrl.'/user/messages/inbox/traveling">'.Yii::t('app','Inbox').'</a></li>
+        <li><a href="'.$baseUrl.'/user/listing/mylistings">'.Yii::t('app','Listing').'</a></li>
+        <li><a href="'.$baseUrl.'/user/listing/trips">'.Yii::t('app','Trips').'</a></li>
+        <li class="active"><a href="'.$baseUrl.'/editprofile">'.Yii::t('app','Profile').'</a></li>
+        <li><a href="'.$baseUrl.'/user/listing/notifications">'.Yii::t('app','Account').'</a></li>';
+        if (!Yii::$app->user->isGuest) {
+          $loguserid = Yii::$app->user->identity->id;
+          $userHostStatus = Yii::$app->user->identity->hoststatus;
+          $userListings = Listing::find()->where(['userid'=>$loguserid])->all();
+
+            if($userHostStatus == 1 && count($userListings) > 0) {
+              echo '<li><a href="'.$baseUrl.'/user/listing/calendar">'.Yii::t('app','Calender').'</a></li>';
+            }
+        }
+		?>
+        </ul>
+    </div> <!--container end -->
+</div> <!--profile_head end -->
+
+
+<div class="bg_gray1">
+  <div class="container">    
+        <div class="col-xs-12 col-sm-3 margin_top20">
+        	<ul class="profile_left list-unstyled">
+			<?php
+              echo '<li><a href="'.$baseUrl.'/editprofile" >'.Yii::t('app','Edit Profile').'</a></li>     
+              <li><a href="'.$baseUrl.'/paysettings/default" >'.Yii::t('app','Stripe Host Account').'</a></li>       
+            <li><a href="'.$baseUrl.'/trust" >'.Yii::t('app','Trust and Verification').'</a></li>
+			<li class="active"><a href="'.$baseUrl.'/user/listing/reviewsbyyou" >'.Yii::t('app','Reviews').'</a></li>
+';
+			?>         
+            </ul>
+            <a href="<?php echo $baseUrl.'/profile/'.$username;?>"><button class="airfcfx-panel btn-border full-width btn btn_google margin_top20"><?php echo Yii::t('app','View Profile');?></button></a>
+        </div> <!--col-sm-3 end -->
+        
+        <div class="col-xs-12 col-sm-9 margin_top20">
+        
+           <div class="no_border no-box-shadow airfcfx-panel panel panel-default">
+                <div class="airfcfx-xs-heading-tab-cnt no-hor-padding airfcfx-padd-top-20 airfcfx-panel panel-heading profile_menu1 prflreview bg-transparant" style="padding-bottom:0px;">
+    
+              <!-- Nav tabs -->
+			  <?php
+               echo '<ul class="airfcfx-noborder nav nav-tabs review_tab" role="tablist">
+                <li role="presentation" class="active"><a class="airfcfx-tab-heading-btpadding" href="'.$baseUrl.'/user/listing/reviewsaboutyou">'.Yii::t('app','Reviews About You').'</a></li>
+                <li role="presentation"><a class="airfcfx-tab-heading-btpadding" href="'.$baseUrl.'/user/listing/reviewsbyyou">'.Yii::t('app','Reviews By You').'</a></li>   
+              </ul>';
+			  ?>
+				</div>
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home"> 
+                                	         
+                    <div class="airfcfx-panel-padding panel-body">
+                        <div class="row">                
+                                <div class="col-xs-12 no-hor-padding">
+									<?php
+									if(!empty($reviews))
+									{
+										foreach($reviews as $review)
+										{
+											$listid = $review->listid;
+											$guestid = $review->userid;
+											$listdata = $review->getList()->where(['id'=>$listid])->one();
+											$listurl = base64_encode($listdata->id.'_'.rand(1,9999));
+											$hostid = $listdata->userid;
+											$hostdata = $review->getUser()->where(['id'=>$guestid])->one();
+											$userimage = $hostdata->profile_image;
+											if($userimage=="")
+											$userimage = "usrimg.jpg";
+											$userimage = Yii::$app->urlManager->createAbsoluteUrl('/albums/images/users/'.$userimage);
+											$ressizeduserimage = Yii::$app->urlManager->createAbsoluteUrl ('resized.php?src='.$userimage.'&w=60&h=60');	
+											$userurl = base64_encode($hostdata->id."-".rand(0,999));
+											$usernameurl = Yii::$app->urlManager->createAbsoluteUrl ( '/profile/' . $userurl );
+											echo '<div class="col-sm-12 no-hor-padding">';
+											echo '<div class="col-sm-2 margin_top20">';
+											echo '<span class="airfcfx-user-icon profile_pict inlinedisplay margin_top20" style="background-image:url('.$ressizeduserimage.');"> </span>
+											<a href="'.$usernameurl.'" class="text_black margin_top10 margin_left10">'.$hostdata->firstname.'</a>';
+											echo '</div>';
+											echo '<div class="margin_top20 col-sm-7" id="review'.$review->reservationid.'">
+					                    <a href="'.Yii::$app->request->baseUrl.'/user/listing/view/'.$listurl.'" target="_blank" style="text-decoration:underline !important; font-size:16px;">'.$listdata->listingname.'</a>
+					                    </div>';
+											echo '<div class="margin_top20 col-sm-8" id="review'.$review->reservationid.'">'.$review->review.'</div>';
+											echo '<div class="margin_top20 col-sm-2" >
+											<span class="text-warning">';
+											$rating = $review->rating;
+											for($i=1;$i<=5;$i++)
+											{	
+												if($i<=$rating)
+													echo '<i class="fa fa-star static-rating"></i>';
+													//echo '<i class="fa fa-star-half-empty static-rating"></i> ';
+												else
+													echo '<i class="fa fa-star-o static-rating"></i>';
+											}
+											echo '</span>
+											</div>';
+											echo '</div>';
+										}
+										echo '<div align="center" class="clear">';
+										echo LinkPager::widget([
+											'pagination' => $pages,
+									   ]);
+										
+										echo '</div>';
+									}
+									else
+									{
+										echo '<div class="border-box">
+												<div class="box-title"><h4>Past Reviews</h4></div>
+												<div class="box-border-content">
+													<p>Reviews are written at the end of a reservation. Reviews you’ve received will be visible both here and on your public profile. </p>
+													<span>No one has reviewed you yet. </span>
+												</div>
+											</div>';
+											
+									}
+									?>
+                                </div>                              
+						</div> <!--row end --> 
+                            
+					</div> 
+
+                </div><!--#home end -->
+				
+			  </div>
+            
+            </div>
+        
+      </div> <!--col-sm-9 end -->
+        
+        
+    </div> <!--container end -->
+	</div>
+  
+<script>
+$(document).ready(function(){    
+    $(".show_ph").click(function(){
+        $(".add_phone").show();
+		$(".show_ph").hide();
+    });
+	$(".add_cont").click(function(){
+        $(".add_contact").toggle();		
+    });
+	$(".add_ship").click(function(){
+        $(".add_shipping").toggle();		
+    });
+});
+</script>  

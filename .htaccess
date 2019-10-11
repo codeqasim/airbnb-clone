@@ -1,0 +1,68 @@
+# prevent directory listings
+Options -Indexes
+IndexIgnore */*
+
+# follow symbolic links
+Options FollowSymlinks
+RewriteEngine on
+
+RewriteCond %{HTTPS} off
+RewriteCond %{ENV:HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301,NE]
+
+RewriteRule ^admin(.+)?$ backend/web/$1 [L,PT]
+RewriteRule ^(.+)?$ frontend/web/$1
+
+RedirectMatch 301 ^/(admin)$ /$1/ 
+
+
+# 1 YEAR
+<FilesMatch "\.(flv|ico|pdf|avi|mov|ppt|doc|mp3|wmv|wav)$">
+    <IfModule mod_expires.c>
+        ExpiresActive On
+        ExpiresDefault A0
+    </IfModule>
+     <IfModule mod_headers.c>
+        Header set Cache-Control "max-age=31536000, public"
+     </IfModule>
+</FilesMatch>
+
+# 1 WEEK
+<FilesMatch "\.(jpg|jpeg|png|gif|swf)$">
+    <IfModule mod_expires.c>
+        ExpiresActive On
+        ExpiresDefault A0
+    </IfModule>
+     <IfModule mod_headers.c>
+        Header set Cache-Control "max-age=604800, public"
+     </IfModule>
+</FilesMatch>
+
+# 1 WEEK
+<FilesMatch "\.(txt|xml|js|css)$">
+    <IfModule mod_expires.c>
+        ExpiresActive On
+        ExpiresDefault A0
+    </IfModule>
+     <IfModule mod_headers.c>
+        Header set Cache-Control "max-age=604800"
+     </IfModule>
+</FilesMatch>
+
+# NEVER CACHE
+<FilesMatch "\.(html|htm|php|cgi|pl)$">
+    <IfModule mod_expires.c>
+        ExpiresActive On
+        ExpiresDefault A0
+    </IfModule>
+     <IfModule mod_headers.c>
+       Header set Cache-Control "max-age=0, private, no-store, no-cache, must-revalidate"
+     </IfModule>
+</FilesMatch>
+
+
+
+
