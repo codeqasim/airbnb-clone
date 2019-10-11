@@ -1,1 +1,0 @@
-<?php $message .= '<p>sdfsd</p>';  ?>
